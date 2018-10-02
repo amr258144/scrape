@@ -12,23 +12,19 @@
 <strong>Step 1:</strong> Clone the repository using command <a href="https://github.com/amr258144/scrape.git">"git clone https://github.com/amr258144/scrape.git"</a>.
 
 <strong>Step 2:</strong> If you are using ubuntu/linux/mac, give permission to the files.<br>
-        <code>
-            cd <project_directory>
-            sudo chmod -R 777 bootstrap/cache
-            sudo chmod -R 777 storage/
-        </code>
+        <code>cd <project_directory></code><br>
+        <code>sudo chmod -R 777 bootstrap/cache</code><br>
+        <code>sudo chmod -R 777 storage/</code><br>
        
 <strong>Step 3:</strong> Create Database in MySQL with Database Name as <strong>scrape</strong>.
 
 <strong>Step 4:</strong> Edit <strong>.env</strong> file and add Database username and password.<br>
-        <code>
-            DB_CONNECTION=mysql
-            DB_HOST=127.0.0.1
-            DB_PORT=3306
-            DB_DATABASE=scrape
-            DB_USERNAME=<db_user>
-            DB_PASSWORD=<db_password>
-        </code>
+        <code>DB_CONNECTION=mysql</code><br>
+        <code>DB_HOST=127.0.0.1</code><br>
+        <code>DB_PORT=3306</code><br>
+        <code>DB_DATABASE=scrape</code><br>
+        <code>DB_USERNAME=<db_user></code><br>
+        <code>DB_PASSWORD=<db_password></code><br>
         
 <strong>Step 5:</strong> Migrate the database schema using artisan migrate command given below,<br>
         <code>sudo php artisan migrate</code>
